@@ -190,19 +190,20 @@
 
 ### Алгоритм решения
 partitionBy:  
-1. Создаем метод <T> Map<Boolean, List<T>> partitionBy(List<T> list, Predicate<T> predicate)  
-2. Создаем HashMap с двумя ключами true и false и пустыми списками  
-3. Для каждого элемента определяем ключ по предикату и добавляем в соответствующий список  
+  1. Создаем метод <T> Map<Boolean, List<T>> partitionBy(List<T> list, Predicate<T> predicate)  
+  2. Создаем HashMap с двумя ключами true и false и пустыми списками  
+  3. Для каждого элемента определяем ключ по предикату и добавляем в соответствующий список  
 groupBy:  
-1. Создаем метод <T, K> Map<K, List<T>> groupBy(List<T> list, Function<T, K> classifier)  
-2. Создаем пустой HashMap  
-3. Для каждого элемента получаем ключ через классификатор  
-4. Используем computeIfAbsent для создания списка при необходимости и добавляем элемент  
+  1. Создаем метод <T, K> Map<K, List<T>> groupBy(List<T> list, Function<T, K> classifier)  
+  2. Создаем пустой HashMap  
+  3. Для каждого элемента получаем ключ через классификатор  
+  4. Используем computeIfAbsent для создания списка при необходимости и добавляем элемент  
 collectToCollection:  
-1. Создаем метод <T, C extends Collection<T>> C collectToCollection(List<T> list, Supplier<C> supplier)  
-2. Создаем коллекцию через supplier  
-3. Добавляем все элементы списка в коллекцию  
-4. Возвращаем коллекцию  
+  1. Создаем метод <T, C extends Collection<T>> C collectToCollection(List<T> list,  
+Supplier<C> supplier)  
+  3. Создаем коллекцию через supplier  
+  4. Добавляем все элементы списка в коллекцию  
+  5. Возвращаем коллекцию  
 Демонстрация: разбиение на положительные/отрицательные, группировка строк по длине,  
 сбор в Set для уникальных значений  
 

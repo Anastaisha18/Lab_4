@@ -66,8 +66,10 @@
 - Storage<String> с "hello" → альтернатива "hello world"  
 
 ### Тест
-
-
+![](screenshots/stor1_1.jpg) ![](screenshots/stor1_2.jpg) 
+![](screenshots/stor1_3.jpg) ![](screenshots/stor1_4.jpg)
+![](screenshots/stor2_1.jpg) ![](screenshots/stor2_2.jpg) 
+![](screenshots/stor2_3.jpg) ![](screenshots/stor2_4.jpg) 
 
 # Задание 2.3
 
